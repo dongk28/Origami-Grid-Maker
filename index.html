@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Origami Grid Maker</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+    <div class="title-block">
+        <p class="subtitle">NO MEASURING · JUST FOLDS</p>
+        <h1>Origami Grid Maker</h1>
+    </div>
+
+    <div class="number-wheel" id="numberWheel">
+        <div class="wheel-fade wheel-fade-top"></div>
+
+        <div class="wheel-window">
+            <div class="wheel-track" id="wheelTrack"></div>
+        </div>
+
+        <div class="wheel-fade wheel-fade-bottom"></div>
+    </div>
+</header>
+
+<main>
+
+    <section class="controls">
+        <input
+            type="hidden"
+            id="gridSize"
+            value="2"
+        >
+    </section>
+
+        <section class="workspace">
+
+            <div class="paper-section">
+
+    <div class="paper-container">
+        <svg id="paper" viewBox="0 0 1000 1000">
+            <rect
+                x="1"
+                y="1"
+                width="998"
+                height="998"
+                fill="white"
+                stroke="black"
+                stroke-width="4"
+            />
+        </svg>
+    </div>
+
+    <div class="grid-info" id="gridInfo">
+        2 × 2 GRID · 1 STEP
+    </div>
+
+</div>
+
+            <div class="steps-section">
+
+    <div class="steps-container">
+        <div id="steps"></div>
+    </div>
+
+    <div class="steps-header">
+        <span>FOLDING STEPS</span>
+        <span>HOVER TO PREVIEW</span>
+    </div>
+
+</div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
