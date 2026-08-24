@@ -9,7 +9,10 @@
 body {
     margin: 0;
     font-family: ui-sans-serif, system-ui, sans-serif;
-    background: #f8f3ec;
+    background-image: url("background.jpg");
+    background-size: 100% auto;
+    background-position: top center;
+    background-repeat: no-repeat;
     color: #222;
     zoom: 0.8;
 }
